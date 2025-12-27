@@ -1,0 +1,33 @@
+column,type,notes
+title,string,Faux title names
+release_date,date/string,Mixed formats for ~10%
+day_of_week_release,category,Mon-Sun abbreviations
+month,int,1-12
+season_number,int,1-5
+num_episodes,int,Episodes in season
+episode_duration_min,int,Avg minutes per episode
+runtime_total_min,int,num_episodes*episode_duration_min
+is_ip,binary,1 if based on known IP
+is_limited_series,binary,1 if limited series
+is_continuation,binary,1 if season_number>1
+primary_genre,category,"Primary genre (messy caps, some 'N/A')"
+maturity_rating,category,"Content rating (messy caps, some 'N/A')"
+language_original,category,"Original language (messy caps, some 'N/A')"
+country_cluster,category,"Country cluster of origin (messy caps, some 'N/A')"
+cast_star_power_mm,float,Top 3 cast social followers (millions)
+pre_release_search_index,int,0-100 index
+social_buzz_volume,int,Pre-release mention volume (skewed)
+trailer_impressions_mm,float,Trailer views (millions)
+marketing_spend_usd,float/string,"USD; a few entries as '$1,234,567' strings"
+homepage_hero_share,float,Share of sessions with hero module (0-0.8)
+email_push_reach_mm,float,Users reached by email push (millions; ~2% in thousands)
+availability_dubbed_count,int,Count of dubbed languages
+availability_subtitle_count,int,Count of subtitle languages
+competition_titles_in_window,int,Competing title count in +-14 days
+holiday_window,binary,1 if Nov/Dec release
+critic_score,int,Critic meta-score 10-98 (some missing)
+audience_score,int,Audience score (some missing)
+synopsis_length_words,int,Word count of synopsis
+title_length_chars,int,Title length in characters
+release_timing_index,float,Seasonality factor by month & DOW
+opening_week_member_hours_mm,float (target),"Opening week viewing, member-hours (millions)"
